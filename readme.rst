@@ -2,9 +2,11 @@
 Aplikasi Kegiatan Kampus Berbasis Web
 #####################################
 
-##Nama Kelompok :
+Nama Kelompok :
 
 Resa Renaldy
+
 Vincentius Garry W
+
 Muhammad Kahar B
 
