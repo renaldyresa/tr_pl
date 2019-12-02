@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2019 at 07:25 AM
+-- Generation Time: Dec 02, 2019 at 11:24 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -40,7 +40,9 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`Id`, `Nama`, `Nim`, `Password`) VALUES
-(1, 'Resaa', '672017265', 'resa');
+(1, 'Resaa', '672017262', 'resa'),
+(5, 'Kahar', '672017085', 'kahar'),
+(6, 'Garry', '672017267', 'garry');
 
 -- --------------------------------------------------------
 
@@ -99,7 +101,28 @@ INSERT INTO `peserta` (`Id_Event`, `Nim`, `Tanggal`) VALUES
 ('5dcec7e4de849', '672017265', '2019-11-17 21:42:48'),
 ('5dd21233af8b4', '672017211', '2019-11-18 10:39:30'),
 ('5ddbbca64f331', '672017265', '2019-11-26 10:53:19'),
+('5dde117934398', '672017222', '2019-12-02 11:40:39'),
 ('5dde117934398', '672017265', '2019-11-27 13:06:57');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `test`
+--
+
+CREATE TABLE `test` (
+  `id_test` int(11) NOT NULL,
+  `nama` varchar(20) NOT NULL,
+  `jenis` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `test`
+--
+
+INSERT INTO `test` (`id_test`, `nama`, `jenis`) VALUES
+(1, 'test 1', 'pl'),
+(2, 'test 2', 'pl');
 
 -- --------------------------------------------------------
 
@@ -123,7 +146,10 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`Nim`, `Nama`, `Fakultas`, `Progdi`, `No_Hp`, `Password`) VALUES
 ('672017001', 'Dwi Kurniawan', 'FTEK', 'Sistem Komputer', '0824232323', 'dwi'),
 ('672017066', 'Rayson Tan', 'FTI', 'TI', '0483434934', 'sui'),
-('672017265', 'Resa Renaldy', 'FTI', 'Teknik Informatika', '085394202728', 'resa12345');
+('672017085', 'Muhammad Kahar Baharudin', 'FTI', 'Teknik Informatika', '0842342342', 'kahar'),
+('672017222', 'test pl', 'FTI', 'Teknik Informatika', '039232392809', '12345'),
+('672017265', 'Resa Renaldy', 'FTI', 'Teknik Informatika', '085394202728', 'resa12345'),
+('672017267', 'Vincentius Garry W', 'FTI', 'Teknik Informatika', '0877834347', 'garry');
 
 --
 -- Indexes for dumped tables
@@ -162,7 +188,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
